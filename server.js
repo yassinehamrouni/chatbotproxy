@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const API_KEY = "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";
+const API_KEY = "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";
 
 app.post("/chat", async (req, res) => {
   try {
@@ -27,4 +27,4 @@ app.post("/chat", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Server running"));
+app.listen(5000, () => console.log("Server running on 5000"));

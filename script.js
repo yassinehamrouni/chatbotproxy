@@ -69,11 +69,11 @@ async function sendMessage() {
   showTyping();
 
   try {
-    const response = await fetch("https://chatbot-proxy-niml.onrender.com/chat", {
-      method: "POST",
+const response = await fetch("http://localhost:5000/chat", {
+            method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        model: "minimax/minimax-m1:free",
+model: "google/gemma-4-26b-a4b-it:free",
         messages: [
           { role: "system", content: buildSystemPrompt() },
           ...conversationHistory
