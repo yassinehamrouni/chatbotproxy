@@ -70,7 +70,7 @@ async function sendMessage() {
 
   try {
 const response = await fetch("https://chatbotproxy.onrender.com/chat", {
-              method: "POST",
+                method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
 model: "llama-3.1-8b-instant",
