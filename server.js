@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const API_KEY = "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";
+const API_KEY = "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";
 
 app.post("/chat", async (req, res) => {
   try {
