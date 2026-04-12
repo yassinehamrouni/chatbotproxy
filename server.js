@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const API_KEY = process.env.GROQ_API_KEY || "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";
+const API_KEY = process.env.GROQ_API_KEY || "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";
 
 app.post("/chat", async (req, res) => {
   try {
